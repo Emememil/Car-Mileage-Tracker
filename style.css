@@ -1,111 +1,122 @@
-/* style.css */
-
-/* Basic Reset and container styling */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
+  background-color: #f4f4f4;
   padding: 20px;
-  background: #f5f5f5;
+  margin: 0;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   background: white;
   padding: 20px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  border-radius: 6px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Headings */
 h2 {
+  margin-top: 0;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-/* Inputs & Buttons */
-input[type="number"],
-input[type="date"] {
-  width: 100%;       /* Full width on mobile */
-  padding: 8px;
-  margin: 8px 0 16px 0;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 1em;
-  margin-top: 10px;
-}
-
-button:disabled {
-  background-color: #a0a0a0;
-  cursor: not-allowed;
-}
-
-/* Label styling */
-label {
+form label {
   display: block;
   margin-top: 12px;
   font-weight: bold;
 }
 
-/* Date range container — stack on mobile */
-.date-range-container {
-  margin-top: 25px;
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.baseline-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.baseline-status {
+  font-size: 0.9em;
+  color: #2c7a2c;
+}
+
+/* New Date Range Section - Vertical */
+.date-range-vertical {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-  justify-content: space-between;
+  margin-top: 30px;
 }
 
-.date-range-container label,
-.date-range-container input,
-.date-range-container button {
-  flex: 1 1 100%;
-  max-width: 100%;
+.date-range-vertical label {
+  font-weight: bold;
 }
 
-/* Table wrapper with horizontal scroll */
+.range-button {
+  margin-top: 16px;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+#rangeresult {
+  font-weight: bold;
+  margin-top: 16px;
+  text-align: center;
+}
+
 .table-wrapper {
   overflow-x: auto;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 400px;
+  margin-bottom: 20px;
 }
 
-th, td {
+th,
+td {
+  text-align: left;
   padding: 10px;
-  border: 1px solid #ddd;
-  text-align: center;
+  border: 1px solid #ccc;
 }
 
 th {
-  background-color: #f0f0f0;
+  background-color: #f8f8f8;
 }
 
-/* Baseline container styling */
-.baseline-container {
-  margin-bottom: 30px;
+.reset-button {
+  background-color: #dc3545;
 }
 
-/* Responsive tweaks for larger screens */
-@media(min-width: 480px) {
-  .date-range-container label,
-  .date-range-container input,
-  .date-range-container button {
-    flex: 1 1 auto;
-    max-width: 120px;
+.reset-button:hover {
+  background-color: #a71d2a;
+}
+
+@media (max-width: 600px) {
+  .date-range-vertical {
+    width: 100%;
   }
 }
