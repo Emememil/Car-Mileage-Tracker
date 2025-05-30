@@ -28,11 +28,12 @@
       <button type="button" id="addEntry" disabled>Add Trip Entry</button>
     </form>
 
-    <div class="date-range-container">
+    <!-- Updated Date Range UI -->
+    <div class="date-range-vertical">
       <label for="rangeStart">Start Date:</label>
       <input type="date" id="rangeStart" />
 
-      <label for="rangeEnd">End Date:</label>
+      <label for="rangeEnd" style="margin-top: 12px;">End Date:</label>
       <input type="date" id="rangeEnd" />
 
       <button type="button" id="calcRangeMileage" class="range-button">Calculate Average Mileage</button>
@@ -54,7 +55,6 @@
       </table>
     </div>
 
-    <!-- Reset button moved here -->
     <button type="button" id="resetData" class="reset-button">Reset All Data</button>
   </div>
 
