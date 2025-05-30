@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Car Mileage Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Set Baseline Odometer</h2>
+    <div class="baseline-container">
+      <input type="number" id="baselineOdometer" placeholder="Enter baseline reading" />
+      <button type="button" id="setBaseline">Set Baseline</button>
+      <p id="baselineStatus" class="baseline-status"></p>
+    </div>
+
+    <form id="mileageForm">
+      <label for="currentOdometer">Current odometer reading (km):</label>
+      <input type="number" id="currentOdometer" name="currentOdometer" placeholder="Enter current reading" disabled required />
+
+      <label for="fuel">Fuel used (liters):</label>
+      <input type="number" id="fuel" name="fuel" placeholder="Enter fuel used" disabled required />
+
+      <label for="startingdate">Date of trip:</label>
+      <input type="date" id="startingdate" name="startingdate" disabled required />
+
+      <button type="button" id="addEntry" disabled>Add Trip Entry</button>
+    </form>
+
+    <div class="date-range-container">
+      <label for="rangeStart">Start Date:</label>
+      <input type="date" id="rangeStart" />
+
+      <label for="rangeEnd">End Date:</label>
+      <input type="date" id="rangeEnd" />
+
+      <button type="button" id="calcRangeMileage" class="range-button">Calculate Average Mileage</button>
+    </div>
+
+    <p id="rangeresult"></p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Distance (km)</th>
+            <th>Fuel (liters)</th>
+            <th>Mileage (km/l)</th>
+          </tr>
+        </thead>
+        <tbody id="tripTableBody"></tbody>
+      </table>
+    </div>
+
+    <!-- Reset button moved here -->
+    <button type="button" id="resetData" class="reset-button">Reset All Data</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

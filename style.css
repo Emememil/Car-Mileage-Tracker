@@ -1,0 +1,164 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: 600;
+  align-self: center;
+}
+
+input[type="number"],
+input[type="date"] {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+input[type="date"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  grid-column: span 2;
+  padding: 12px 0;
+  background-color: #007bff;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+#rangeStart, #rangeEnd {
+  width: 48%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-right: 4%;
+}
+
+#rangeEnd {
+  margin-right: 0;
+}
+
+
+.range-button {
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.range-button:hover {
+  background-color: #1e7e34;
+}
+
+/* Output paragraph for results */
+#rangeresult {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #444;
+  min-height: 24px; /* space reserved even if empty */
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+thead th {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e9f1ff;
+}
+
+tbody td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+
+@media (max-width: 480px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  #rangeStart, #rangeEnd {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  button, .range-button {
+    grid-column: span 1;
+    width: 100%;
+  }
+}
