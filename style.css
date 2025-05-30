@@ -1,5 +1,3 @@
-/* style.css */
-
 * {
   box-sizing: border-box;
 }
@@ -268,6 +266,7 @@ tr:hover {
   .date-range-container {
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
   }
 
   .date-range-container label,
@@ -275,6 +274,11 @@ tr:hover {
   .range-button {
     min-width: auto;
     width: 100%;
+  }
+
+  .date-range-container input[type="date"] {
+    padding: 8px 10px;
+    font-size: 0.9rem;
   }
 
   .baseline-container {
@@ -285,15 +289,5 @@ tr:hover {
   .baseline-container input,
   .baseline-container button {
     width: 100%;
-  }
-  
-  /* Fix for table on mobile */
-  table {
-    min-width: unset; /* allow table to shrink */
-    font-size: 0.85rem; /* smaller font for better fit */
-  }
-
-  .table-wrapper {
-    overflow-x: auto; /* allow horizontal scroll if needed */
   }
 }
