@@ -1,32 +1,46 @@
-# Car Mileage Tracker
+# Car Mileage Tracker 🚗⛽
 
-A simple web app to track your car trips, calculate mileage, and fuel usage over time.
+A lightweight web app that helps track and calculate car mileage based on odometer readings and fuel usage. Built with HTML, CSS, and JavaScript, this tool is useful for tracking fuel efficiency over multiple trips.
 
-## Features
-- Set a baseline odometer reading
-- Add trip entries with date, distance, and fuel used
-- Calculate average mileage between date ranges
-- View trip history in a table
+## 🧰 Features
 
-## How to use
-1. Set your car's baseline odometer reading.
-2. Add each trip’s current odometer and fuel used.
-3. Select a date range and calculate mileage statistics.
+- Add trips with current odometer reading and fuel filled
+- Automatically calculates mileage per trip
+- View mileage history in a clean table
+- Calculates:
+  - Total distance traveled
+  - Average distance per trip
+  - Average mileage (km/l)
+- Set a starting odometer baseline
+- Clean and beginner-friendly interface
 
-## Tech used
-- HTML
-- CSS
-- JavaScript
+## ⚙️ Technologies Used
 
-## How to view this project
-Open `index.html` in a web browser to use the app.
+- HTML5
+- CSS3
+- JavaScript (DOM manipulation, local state)
+
+## 📱 Live Demo
+
+👉 Coming Soon / [Host it using GitHub Pages](https://pages.github.com/) or [Netlify](https://www.netlify.com/)!
+
+## 📷 Screenshots
+
+> (Add a screenshot of the app here if you have one — or upload it to GitHub and link it)
+
+## 📦 How to Use
+
+1. Open the app in browser.
+2. Enter the initial odometer reading.
+3. For every trip:
+   - Enter the current odometer reading and fuel used.
+4. View results instantly with trip-wise mileage and summary.
+
+## 👤 Author
+
+**Emil Kalathil**  
+📧 emilwilliam66@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/emil-w)  
+💻 [GitHub](https://github.com/Emememil)
 
 ---
-
-Made by Emil William
-
-
-
-
-
-
