@@ -1,8 +1,8 @@
-# Car Mileage Tracker 🚗⛽
+# Car Mileage Tracker 
 
 A lightweight web app that helps track and calculate car mileage based on odometer readings and fuel usage. Built with HTML, CSS, and JavaScript, this tool is useful for tracking fuel efficiency over multiple trips.
 
-## 🧰 Features
+## Features
 
 - Add trips with current odometer reading and fuel filled
 - Automatically calculates mileage per trip
@@ -14,21 +14,21 @@ A lightweight web app that helps track and calculate car mileage based on odomet
 - Set a starting odometer baseline
 - Clean and beginner-friendly interface
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript (DOM manipulation, local state)
 
-## 📱 Live Demo
+## Live Demo
 
-👉 Coming Soon / [Host it using GitHub Pages](https://pages.github.com/) or [Netlify](https://www.netlify.com/)!
+ [Live Demo](https://emememil.github.io/Car-Mileage-Tracker/))!
 
-## 📷 Screenshots
+## Screenshots
 
 > (Add a screenshot of the app here if you have one — or upload it to GitHub and link it)
 
-## 📦 How to Use
+## How to Use
 
 1. Open the app in browser.
 2. Enter the initial odometer reading.
@@ -36,7 +36,7 @@ A lightweight web app that helps track and calculate car mileage based on odomet
    - Enter the current odometer reading and fuel used.
 4. View results instantly with trip-wise mileage and summary.
 
-## 👤 Author
+## Author
 
 **Emil Kalathil**  
 📧 emilwilliam66@gmail.com  
