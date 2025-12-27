@@ -22,7 +22,7 @@ A lightweight web app that helps track and calculate car mileage based on odomet
 
 ## Live Demo
 
- [Live Demo](https://emememil.github.io/Car-Mileage-Tracker/))!
+ [Live Demo](https://emememil.github.io/Car-Mileage-Tracker/))
 
 ## Screenshots
 
